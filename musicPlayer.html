@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Player</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="logo">MusicPlayer</div>
+  </header>
+  <div class="main-content">
+    <div class="sidebar">
+      <h3>Playlist</h3>
+      <ul id="playlist">
+        <!-- Playlist items will be added here by JavaScript -->
+      </ul>
+    </div>
+    <div class="music-player-container">
+      <div class="center-container">
+        <div class="music-player">
+          <div class="cover-container">
+            <img id="track-cover" src="default-cover.jpg" alt="Track Cover">
+          </div>
+          <div class="player-details">
+            <h2 id="track-title">Track Title</h2>
+            <p id="track-artist">Artist Name</p>
+          </div>
+          <audio id="audio-player" src=""></audio>
+          <div class="player-controls">
+            <button id="prev-btn" class="control-btn"><i class="fas fa-step-backward"></i></button>
+            <button id="rewind-btn" class="control-btn"><i class="fas fa-backward"></i></button>
+            <button id="play-pause-btn" class="control-btn"><i class="fas fa-play"></i></button>
+            <button id="forward-btn" class="control-btn"><i class="fas fa-forward"></i></button>
+            <button id="next-btn" class="control-btn"><i class="fas fa-step-forward"></i></button>
+          </div>
+          <div class="progress-container">
+            <input type="range" id="progress-bar" value="0" max="100">
+          </div>
+          <div class="volume-controls">
+            <i class="fas fa-volume-down"></i>
+            <input type="range" id="volume-bar" value="100" max="100">
+            <i class="fas fa-volume-up"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2024 MusicPlayer. All rights reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
